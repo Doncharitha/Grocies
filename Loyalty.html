@@ -1,0 +1,160 @@
+<!--doctype html-->
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--==Title==================================-->
+  <title>Grocies</title>
+  <!--==Stylesheet=============================-->
+  <link rel="icon" href="images/lo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <!--==Fav-icon===============================-->
+  <link rel="shortcut icon" href="images/fav-icon.png"/>
+  <!--==Using-Font-Awesome=====================-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!--==Import-Font-Family======================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/lo.jpg" alt="Logo">
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="veg.html">Veggies</a></li>
+            <li><a href="dairy.html">Dairy</a></li>
+            <li><a href="cosmetics.html">Cosmetics</a></li>
+        </ul>
+    </nav>
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+        <!--cart----->
+        <a href="orderpage.html" class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+          <!--like----->
+          <a href="Loyalty.html" class="user">
+              <i class="fas fa-user"></i>
+          </a>  
+      </div>
+    </nav>
+  </header>
+    <body>
+        <div class="container">
+            <h2>Loyalty Registration</h2>
+            <form action="#" method="post">
+                <div class="fieldset-container">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <textarea id="address" name="address" required></textarea><br>
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Password</legend>
+                        <div class="form-group">
+                            <label for="Username">Username:</label>
+                            <input type="password" id="Username" name="Username" required>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                            <label for="confirm_password">Confirm Password:</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required><br>
+                            <button type="submit" class="btn">login</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="loyalty-schemes">
+                    <div class="scheme">
+                        <h3>SILVER</h3>
+                        <ul>
+                            <li>Earn 2 points for every Rs.100 spent</li>
+                            <li>Extra discounts on selected products</li>
+                            <li>Free home delivery for orders over Rs5000</li>
+                        </ul>   
+                    </div>
+                    <div class="scheme">
+                        <h3>GOLD</h3>
+                        <ul>
+                            <li>Earn 3 points for every Rs.100 spent</li>
+                            <li>Priority Customer Service</li>
+                            <li>Special access to loyalty-only events and promotions</li>
+                        </ul> 
+                    </div>
+                    <div class="scheme">
+                        <h3>PLATINUM</h3>
+                        <ul>
+                            <li>Earn 4 points for every Rs.100 spent</li>
+                            <li>Personal shopper service</li>
+                            <li>Complimentary gifts on select purchases</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="radio-group">
+                    <label><input type="radio" name="subscription" value="basic"> SILVER</label>
+                    <label><input type="radio" name="subscription" value="standard"> GOLD</label>
+                    <label><input type="radio" name="subscription" value="premium"> PLATINUM</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>       
+ <!--Footer-->
+ <footer>
+    <div class="footer-container">
+        <!--logo-container------>
+        <div class="logo">
+              <img src="images/lo.jpg" alt="Logo">
+            <!--social----->
+            <div class="footer-social">
+                <a href="https://web.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://insragram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+            <strong>Contacts</strong>
+            <ul>
+              <li><a href="https://web.whatsapp.com/">Phone No:+94 11 ---3500</a></li>
+                <li><a href="https://mail.google.com/">Email:grocies@gmail.com</a></li>
+                <li><a href="https://www.google.com/maps">Address:No:148, Vauxhall Street, Colombo 2, Sri Lanka</a></li>
+            </ul>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+            <strong>Important Links</strong>
+            <ul>
+                <li><a href="Loyalty.html">Loyalty Registration</a></li>
+                <li><a href="orderpage.html">Order Page</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </footer> 
+  </body>
+</html>

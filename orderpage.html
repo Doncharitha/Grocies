@@ -1,0 +1,144 @@
+<!--doctype html-->
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--==Title==================================-->
+  <title>Grocies</title>
+  <!--==Stylesheet=============================-->
+  <link rel="icon" href="New images/lo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <!--==Fav-icon===============================-->
+  <link rel="shortcut icon" href="images/fav-icon.png"/>
+  <!--==Using-Font-Awesome=====================-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!--==Import-Font-Family======================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/lo.jpg" alt="Logo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+      <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="veg.html">Veggies</a></li>
+            <li><a href="dairy.html">Dairy</a></li>
+            <li><a href="cosmetics.html">Cosmetics</a></li>
+        </ul>
+      </nav>
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+        <!--cart----->
+        <a href="orderpage.html" class="cart">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <!--like----->
+        <a href="Loyalty.html" class="user">
+          <i class="fas fa-user"></i>
+        </a>  
+      </div>
+      </nav>
+    </header>
+<div class="container">
+  <h2>Order Form</h2>
+  <form action="#" method="post">
+    <div class="fieldset-container">
+    <fieldset>
+      <label for="Product">Product:</label>
+      <input type="text" id="Product" name="Product" required>
+  
+      <label for="quantity">quantity:</label>
+      <input type="text" id="quantity" name ="quantity" required>
+      <button type="submit" class="btn">Add to cart</button>
+      </fieldset>
+    <fieldset>
+    <div class="order-summary">
+    <h3>Order Summary</h3>
+      <label><input type="radio">Product: potato<br>Quantity: 200g</li></label>
+      <p>Total: Rs100.00</p>
+      <label><input type="radio">Product: facewash<br>Quantity: 2</li></label>
+      <p>Total: Rs100.00</p>
+      <p>Order Number: <span class="order-number">#12345</span></p>
+        <button type="submit" class="btn">Check Out</button>
+      </div><br>
+    </fieldset>
+    </div>
+    <!-- Payment Details -->
+    <div class="payment-details">
+      <h3>Payment Details</h3>
+      <div class="radio-group">
+        <button class="btn" data-target="credit-card-details">Credit Card</button>
+        <button class="btn" data-target="paypal-details">PayPal</button>
+        <button class="btn" data-target="bank-transfer-details">Bank Transfer</button>
+      </div>
+      <div id="credit-card-details" class="payment-option">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+      </div>
+
+      <div id="paypal-details" class="payment-option">
+        <label for="paypal-email">PayPal Email:</label>
+        <input type="email" id="paypal-email" name="paypal-email" placeholder="Enter your PayPal email">
+      </div>
+
+      <div id="bank-transfer-details" class="payment-option">
+        <label for="bank-details">Bank Account Details:</label>
+        <input type="text" id="bank-details" name="bank-details" placeholder="Enter your bank account details">
+      </div>
+      </div>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Place Order">
+  </form>
+</div>
+<!--Footer-->
+<footer>
+  <div class="footer-container">
+      <!--logo-container------>
+      <div class="logo">
+            <img src="images/lo.jpg" alt="Logo">
+          <!--social----->
+          <div class="footer-social">
+            <a href="https://web.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://insragram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+      <!--links------------------------->
+      <div class="footer-links">
+        <strong>Contacts</strong>
+        <ul>
+          <li><a href="https://web.whatsapp.com/">Phone No:+94 11 ---3500</a></li>
+            <li><a href="https://mail.google.com/">Email:grocies@gmail.com</a></li>
+            <li><a href="https://www.google.com/maps">Address:No:148, Vauxhall Street, Colombo 2, Sri Lanka</a></li>
+        </ul>
+    </div>
+    <!--links------------------------->
+    <div class="footer-links">
+        <strong>Important Links</strong>
+        <ul>
+            <li><a href="Loyalty.html">Loyalty Registration</a></li>
+            <li><a href="orderpage.html">Order Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer> 
+</body>
+</html>
